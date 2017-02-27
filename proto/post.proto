@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package bar;
+
+message AddPostReq {
+    int32 tid = 1;
+    int32 uid = 2;
+    string title = 3;
+    string content = 4;
+}
+
+message AddPostRsp {
+    int32 status = 1;
+    string qid = 2;
+}

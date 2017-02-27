@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package bar;
+
+import "post.proto";
+
+service BarCore {
+
+    rpc AddPost (AddPostReq) returns (AddPostRsp) {};
+
+}
